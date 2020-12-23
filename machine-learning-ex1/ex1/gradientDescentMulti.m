@@ -6,6 +6,7 @@ function [theta, J_history] = gradientDescentMulti(X, y, theta, alpha, num_iters
 % Initialize some useful values
 m = length(y); % number of training examples
 J_history = zeros(num_iters, 1);
+% Add intercept term to X with X = [ones(m, 1) X]; ===> see ex1_multi.m
 
 nb_features = size(X, 2);
 

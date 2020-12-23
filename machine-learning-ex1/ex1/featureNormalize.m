@@ -7,7 +7,7 @@ function [X_norm, mu, sigma] = featureNormalize(X)
 
 % You need to set these values correctly
 X_norm = X;
-mu = zeros(1, size(X, 2));
+mu = zeros(1, size(X, 2)); %size(X, 2) => nb columns
 sigma = zeros(1, size(X, 2));
 
 % ====================== YOUR CODE HERE ======================
@@ -26,12 +26,13 @@ sigma = zeros(1, size(X, 2));
 % Hint: You might find the 'mean' and 'std' functions useful.
 %       
 
+mu = mean(X) %matrice ligne des moyennes de X
+sigma = std(X) %matrice ligne des ecart-types de X
 
-
-
-
-
-
+for i = 1:size(X, 2) %nb of features 1 -> n (nb columns)
+  X_numerator  = X(:, i) - mu(i); %on retire la moyenne pour toutes les lignes de la colonne i <=> toutes les données de la feature i
+  X_norm(:, i) = X_numerator / sigma(i); %on divise par son ecart-type
+end
 
 
 % ============================================================

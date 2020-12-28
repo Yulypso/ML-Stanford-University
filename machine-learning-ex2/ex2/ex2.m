@@ -97,6 +97,10 @@ options = optimset('GradObj', 'on', 'MaxIter', 400);
 %  This function will return theta and the cost 
 [theta, cost] = ...
 	fminunc(@(t)(costFunction(t, X, y)), initial_theta, options);
+%@(t) short-hand : create a function + call costFunction
+
+%fminunc do every loops for us, we don't need to provide any loops ourselves but only the function
+%calculating the cost and the gradient
 
 % Print theta to screen
 fprintf('Cost at theta found by fminunc: %f\n', cost);

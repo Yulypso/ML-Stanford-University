@@ -17,10 +17,28 @@ grad = zeros(size(theta));
 %               Compute the partial derivatives and set grad to the partial
 %               derivatives of the cost w.r.t. each parameter in theta
 
+%compute cost function
+hypothesis = sigmoid(X*theta);
+
+%penalty calculation
+%need to exclude the first theta value by setting 0 on the first value of the vector
+% ; denotes a column vectors here
+% then we add all the theta vector from position 2 to n 
+theta_0excluded = [0; theta(2:size(theta))];
+
+%matrix version, replaces sum versions
+%with vector/matrix transpositions and matrix multiplications
+
+%penalty term
+p = (1/(2*m))*lambda*(theta_0excluded'*theta_0excluded);
+
+%cost term
+% y' : y transpose
+J = (1/m)*((-y)'*log(hypothesis) - (1-y)'*log(1-hypothesis)) + p;
 
 
-
-
+%gradient calculation
+grad = (1/m)*(((hypothesis - y)'*X) + lambda*theta_0excluded); %theta_0excluded is a column vector
 
 % =============================================================
 

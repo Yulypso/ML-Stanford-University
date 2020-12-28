@@ -20,12 +20,16 @@ grad = zeros(size(theta));
 % Note: grad should have the same dimensions as theta
 %
 
+%Compute first cost function (sigmoid)
+hypothesis = sigmoid(X*theta);
 
+%Sum version
+%J = (1/m)*sum(-y .* log(hypothesis) - (1 - y) .* log(1-hypothesis));
 
+%matrix version
+J = (1/m)*((-y)'*log(hypothesis)-(1-y)'*log(1-hypothesis));
 
-
-
-
+grad = (1/m)*(X'*(hypothesis - y));
 
 % =============================================================
 

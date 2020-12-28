@@ -24,13 +24,13 @@ hypothesis = sigmoid(X*theta);
 %need to exclude the first theta value by setting 0 on the first value of the vector
 % ; denotes a column vectors here
 % then we add all the theta vector from position 2 to n 
-theta_0excluded = [0; theta(2:size(theta))];
+theta_0excluded = [0; theta(2:size(theta), :)];
 
 %matrix version, replaces sum versions
 %with vector/matrix transpositions and matrix multiplications
 
 %penalty term
-p = (1/(2*m))*lambda*(theta_0excluded'*theta_0excluded);
+p = lambda*(theta_0excluded'*theta_0excluded)/(2*m);
 
 %cost term
 % y' : y transpose
@@ -38,7 +38,7 @@ J = (1/m)*((-y)'*log(hypothesis) - (1-y)'*log(1-hypothesis)) + p;
 
 
 %gradient calculation
-grad = (1/m)*(((hypothesis - y)'*X) + lambda*theta_0excluded); %theta_0excluded is a column vector
+grad = (1/m)*((X'*(hypothesis - y)) + lambda*theta_0excluded); %theta_0excluded is a column vector
 
 % =============================================================
 

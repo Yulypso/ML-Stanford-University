@@ -82,13 +82,13 @@ __Week 3 | Logistic Regression & Regularization (27/12/2020)__
 
 <br>
 
-__Week 4 | Neural Networks Representation ()__
+__Week 4 | Neural Networks Representation (31/12/2020)__
 - Non-linear Hypotheses
 - Neurons and the Brain
 - Model Representation
 - Multiclass Classification
 - Neural Networks
-- [machine-learning-ex3]()
+- [machine-learning-ex3](https://github.com/Yulypso/ML-Stanford-University/tree/master/machine-learning-ex3/ex3)
 
 <br>
 

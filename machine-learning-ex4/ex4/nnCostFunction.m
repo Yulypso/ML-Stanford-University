@@ -77,8 +77,12 @@ z3 = a2*Theta2'; %calcul de la fonction sigmoid par theta au noeud qu'on stocke 
 a3 = sigmoid(z3);
 h = a3; %dernier noeud
 
+% calculte penalty
+p = (lambda/(2*m))*(sum(sum(Theta1(:, 2:end).^2, 2)) + sum(sum(Theta2(:,2:end).^2, 2)));
+
 % calcul de la fonction de cout
 J = sum(sum((-Y).*log(h) - (1-Y).*log(1-h), 2))/m;
+J += p;
 
 
 

@@ -62,12 +62,23 @@ Theta2_grad = zeros(size(Theta2));
 %               and Theta2_grad from Part 2.
 %
 
+%Preparation de l'output Y en vecteur
+I = eye(num_labels); %matrice diagonale de taille num_labels
+Y = zeros(m, num_labels); %initialisation de la matrice Y
+for i=1:m
+  Y(i, :)= I(y(i), :);
+end
 
+% initialisation de la forward propagation sachant qu'on a 3 layers (feedforward)
+a1 = [ones(m, 1) X]; %vecteur de 1 de taille m x 1
+z2 = a1*Theta1'; %initialisation de z sachant que a1 = X 
+a2 = [ones(size(z2, 1), 1) sigmoid(z2)]; %vecteur de 1 de taille de z2 x 1 
+z3 = a2*Theta2'; %calcul de la fonction sigmoid par theta au noeud qu'on stocke dans z3
+a3 = sigmoid(z3);
+h = a3; %dernier noeud
 
-
-
-
-
+% calcul de la fonction de cout
+J = sum(sum((-Y).*log(h) - (1-Y).*log(1-h), 2))/m;
 
 
 

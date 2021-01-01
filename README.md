@@ -92,14 +92,14 @@ __Week 4 | Neural Networks Representation (31/12/2020)__
 
 <br>
 
-__Week 5 | Neural Networks Learning ()__
+__Week 5 | Neural Networks Learning (01/01/2021)__
 - Backpropagation Algorithm
 - Unrolling Parameters
 - Gradient Checking
 - Random Initialization
 - Putting It Together
 - Autonomous Driving
-- [machine-learning-ex4]()
+- [machine-learning-ex4](https://github.com/Yulypso/ML-Stanford-University/tree/master/machine-learning-ex4/ex4)
 
 <br>
 

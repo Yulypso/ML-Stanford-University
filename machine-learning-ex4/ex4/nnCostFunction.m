@@ -78,21 +78,28 @@ a3 = sigmoid(z3);
 h = a3; %dernier noeud
 
 % calculte penalty
+%size(Theta1) => 25 lines & 401 columns <=> 400 inputs + 1 bias & 25 nodes at the second layer
 p = (lambda/(2*m))*(sum(sum(Theta1(:, 2:end).^2, 2)) + sum(sum(Theta2(:,2:end).^2, 2)));
+%on ne calcule pas la penalty sur la premiere feature de theta1 car c'est la valeur de theta0
 
-% calcul de la fonction de cout
+
+% calcul de la fonction de cout 
 J = sum(sum((-Y).*log(h) - (1-Y).*log(1-h), 2))/m;
+%ajout de la regularization a la fonction de cout
 J += p;
 
+% calculate sigmas
+sigma3 = a3 - Y;
+sigma2 = (sigma3*Theta2 .* sigmoidGradient([ones(size(z2, 1), 1) z2]))(:, 2:end);
+
+% accumulate gradients
+delta_1 = sigma2'*a1;
+delta_2 = sigma3'*a2;
 
 
-
-
-
-
-
-
-
+% calculate regularized gradient
+Theta1_grad = delta_1./m + (lambda/m)*[zeros(size(Theta1,1), 1) Theta1(:, 2:end)];
+Theta2_grad = delta_2./m + (lambda/m)*[zeros(size(Theta2,1), 1) Theta2(:, 2:end)];
 
 
 % -------------------------------------------------------------

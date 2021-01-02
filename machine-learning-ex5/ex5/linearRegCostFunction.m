@@ -19,11 +19,10 @@ grad = zeros(size(theta));
 %               You should set J to the cost and grad to the gradient.
 %
 
-
-
 % calculate cost function
 diff = X*theta - y;
-% calculate penalty
+% calcul du penalty
+
 % excluded the first theta value
 theta1 = [0 ; theta(2:end, :)];
 p = lambda*(theta1'*theta1);

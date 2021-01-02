@@ -103,7 +103,7 @@ __Week 5 | Neural Networks Learning (01/01/2021)__
 
 <br>
 
-__Week 6 | Machine Learning System Advice & Design ()__
+__Week 6 | Machine Learning System Advice & Design (02/01/2021)__
 - Deciding What to Try Next
 - Evaluating a Hypothesis
 - Model Selection and Train/Validation/Test Sets
@@ -111,7 +111,7 @@ __Week 6 | Machine Learning System Advice & Design ()__
 - Regularization and Bias/Variance
 - Learning Curves
 - Deciding What to Do Next Revisited
-- [machine-learning-ex5]()
+- [machine-learning-ex5](https://github.com/Yulypso/ML-Stanford-University/tree/master/machine-learning-ex5/ex5)
 - Prioritizing What to Work On
 - Error Analysis
 - Error Metrics for Skewed Classes
@@ -126,7 +126,7 @@ __Week 7 | Support Vector Machines ()__
 - Mathematics Behind Large Margin Classification
 - Kernels
 - Using An SVM
-- [machine-learning-ex6]()
+- [machine-learning-ex6](https://github.com/Yulypso/ML-Stanford-University/tree/master/machine-learning-ex6/ex6)
 
 <br>
 
@@ -141,7 +141,7 @@ __Week 8 | Unsupervised Learning & Dimensionality Reduction ()__
 - Reconstruction from Compressed Representation
 - Choosing the Number of Principal Components
 - K-Means Clustering and PCA 
-- [machine-learning-ex7]()
+- [machine-learning-ex7](https://github.com/Yulypso/ML-Stanford-University/tree/master/machine-learning-ex7/ex7)
 
 <br>
 
@@ -154,7 +154,7 @@ __Week 9 | Anomaly Detection & Recommender Systems ()__
 - Collaborative Filtering Algorithm
 - Low Rank Matrix Factorization
 - Mean Normalization
-- [machine-learning-ex8]()
+- [machine-learning-ex8](https://github.com/Yulypso/ML-Stanford-University/tree/master/machine-learning-ex8/ex8)
 
 <br>
 

@@ -21,14 +21,17 @@ grad = zeros(size(theta));
 
 
 
+% calculate cost function
+diff = X*theta - y;
+% calculate penalty
+% excluded the first theta value
+theta1 = [0 ; theta(2:end, :)];
+p = lambda*(theta1'*theta1);
 
+J = (diff'*diff)/(2*m) + p/(2*m);
 
-
-
-
-
-
-
+% calculate gradient
+grad = (1/m)*(X'*diff+lambda*theta1);
 
 % =========================================================================
 

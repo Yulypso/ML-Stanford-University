@@ -148,7 +148,7 @@ __Week 8 | Unsupervised Learning & Dimensionality Reduction ()__
 __Week 9 | Anomaly Detection & Recommender Systems ()__
 - Gaussian Distribution
 - Anomaly Detection System
-- Anomaly Detection vs. Supervised Learning
+- Anomaly Detection vs Supervised Learning
 - Multivariate Gaussian Distribution
 - Content Based Recommendations
 - Collaborative Filtering Algorithm

@@ -120,7 +120,7 @@ __Week 6 | Machine Learning System Advice & Design (02/01/2021)__
 
 <br>
 
-__Week 7 | Support Vector Machines ()__
+__Week 7 | Support Vector Machines (04/01/2021)__
 - Optimization Objective
 - Large Margin Intuition
 - Mathematics Behind Large Margin Classification
@@ -130,7 +130,7 @@ __Week 7 | Support Vector Machines ()__
 
 <br>
 
-__Week 8 | Unsupervised Learning & Dimensionality Reduction ()__
+__Week 8 | Unsupervised Learning & Dimensionality Reduction (08/01/2021)__
 - K-Means Algorithm
 - Optimization Objective
 - Random Initialization

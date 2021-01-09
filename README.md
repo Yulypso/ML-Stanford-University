@@ -145,7 +145,7 @@ __Week 8 | Unsupervised Learning & Dimensionality Reduction (08/01/2021)__
 
 <br>
 
-__Week 9 | Anomaly Detection & Recommender Systems ()__
+__Week 9 | Anomaly Detection & Recommender Systems (09/01/2021)__
 - Gaussian Distribution
 - Anomaly Detection System
 - Anomaly Detection vs Supervised Learning

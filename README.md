@@ -4,6 +4,10 @@
 
 [Thierry Khamphousone](https://www.linkedin.com/in/tkhamphousone/)
 
+<p align="center" width="100%">
+    <img align="center" width="950" height="734" src="./pictures/Coursera-ML-Certificate.png"/>
+</p>
+
 ## Introduction
 
 Machine learning is the science of getting computers to act without being explicitly programmed.

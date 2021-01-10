@@ -157,7 +157,7 @@ __Week 9 | Anomaly Detection & Recommender Systems (09/01/2021)__
 
 <br>
 
-__Week 10 | Large Scale Machine Learning ()__
+__Week 10 | Large Scale Machine Learning (10/01/2021)__
 - Learning With Large Datasets
 - Stochastic Gradient Descent
 - Mini-Batch Gradient Descent
@@ -167,7 +167,7 @@ __Week 10 | Large Scale Machine Learning ()__
 
 <br>
 
-__Week 11 | Photo OCR Application ()__
+__Week 11 | Photo OCR Application (10/01/2021)__
 - Problem Description and Pipeline
 - Sliding Windows
 - Getting Lots of Data and Artificial Data

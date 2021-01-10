@@ -45,14 +45,16 @@ diff = (X*Theta'-Y);
 J = (1/2)*sum((diff.^2)(R==1));
 % regularized theta.
 J = J + (1/2)*lambda*sum(sum(Theta.^2));  
-% regularized x.
-J = J + (1/2)*lambda*sum(sum(X.^2))/2;    
+% regularized cost.
+J = J + (1/2)*lambda*sum(sum(X.^2));    
 
 %unregularized vectorized implementation - collaborative filtering gradient
 X_grad = (diff.*R)*Theta;                 
 Theta_grad = ((diff.*R)'*X);              
 
-
+%adding regularization term 
+X_grad += (lambda * X);            
+Theta_grad += (lambda * Theta);  
 
 
 

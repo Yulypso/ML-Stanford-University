@@ -1,7 +1,6 @@
-# Machine Learning - Stanford University Courses
+# Machine Learning - Stanford University
 
 ## Author
-[Andrew Ng (Teacher)](https://www.linkedin.com/in/andrewyng/)
 
 [Thierry Khamphousone](https://www.linkedin.com/in/tkhamphousone/)
 
